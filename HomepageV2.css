@@ -47,13 +47,6 @@ body {
     border-top: 10px solid rgb(249, 211, 139);
 }
 
-.footer .mediaLinks {
-    float: left;
-    padding: 20px;
-    width: 50px;
-    height: 50px;
-    margin-top: 50%;
-}
 
 .footer .logo {
     margin-top: 35px;
@@ -309,6 +302,18 @@ input[name="r"] {
 
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.65);
+}
+.vexInfoText1  {
+    width:40%;    
+    margin-left:4%;
+    position:absolute;
+}
+.vexInfoText2 {
+    width:40%;
+    margin-left:55%;
+    margin-top:200px;
+    text-align:right;
+    position:absolute;
 }
 
 .moveTeamsButtonLeft {
@@ -567,7 +572,9 @@ input[name="r"] {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
 }
 
-
+.vexText {
+    font-size:40px;
+}
 /* Line stuff */
 
 .line {
@@ -703,6 +710,10 @@ input[name="r"] {
     right: 40px;
     bottom: 31px;
     z-index: 100;
+    
+}
+.vexInfoText1 a .vexInfoText2 a {
+    font-size:16px;
 }
 
 
@@ -731,6 +742,7 @@ input[name="r"] {
     }
 
 
+    
 
     #toggleMenu {
         font-size: 16px;
@@ -809,3 +821,186 @@ input[name="r"] {
     }
 }
 
+
+
+@media only screen and (max-width:767px) {
+    #sidenav {
+        top: 175px;
+        left: 35px;
+    }
+    #menuTeamList {
+        top:175px;
+        width:15px;
+        line-height:15px;
+    }
+    .link {
+        font-size: 10px;
+    }
+    
+    .link:hover {
+        font-size: 11px;
+    } 
+    #splash {
+        height:350px;
+    }
+    .vex2019text {
+        position: absolute;
+        top:280px;
+        font-size: 11px;
+    }
+    .vexText {
+        font-size:25px;
+    }
+    #menuTeamList a {
+        font-size:10px;
+    }
+    .sidenavContent {
+        line-height: 15px;
+    }
+    .vexInfoText1 {
+        text-align:justify;
+        width:70%;
+        margin-left:15%;
+        position:relative;
+    }
+    .vexInfoText2 {
+        text-align:justify;
+        width:70%;
+        margin-left:15%;
+        margin-top:-50px;
+        position:relative;
+    }
+    .vexInfoText1 a {
+        font-size:11px;
+    }
+    .vexInfoText2 a {
+        font-size:11px;
+    }
+    #toggleMenu {
+        font-size: 11px;
+        margin-left: 10px;
+    }
+    #toggleMenu:hover .line {
+        width: 45px;
+    }
+    .teamLogo {
+        font-size: 10px;
+    }
+    .contactText1 {
+        font-size: 10px;
+        height: 11px;
+        right:20px;
+    }
+    
+    .contactText2 {
+        font-size: 10px;
+        right:20px;
+    }
+    
+    .contactInfo:hover .contactText2 {
+        height: 11px;
+    }
+    .sidenavContent .activeLink {
+        font-size: 11px;
+    }
+    #vexInfoSection p {
+        font-size: 13px;
+    }
+    
+#toggleMenu:hover .line {
+    opacity: 1;
+    width: 30px;
+}
+
+.robotImage {
+    margin-top: -125px;
+    width: 100px;
+    height: 100px;
+}
+    .largeTitle {
+        font-size: 40px;
+    }
+
+
+    .thinTitle {
+        font-size: 100px;
+        letter-spacing:20px;
+        padding-top:20px;
+    }
+    #vexInfoSection {
+        height: 820px;
+    }
+    #towerTakeoverYT {
+        width: 250px;
+        height:150px;
+        margin-left:50%;
+        transform:translateX(-125px);
+        margin-top: 15px;
+        position:relative;
+        margin-bottom:0;
+    }
+    #vexInfoSection img {
+        width: 200px;
+        height: 200px;
+        margin-left:50%;
+        transform:translateX(-100px);  
+        margin-top: 0px;
+        position:relative;
+    }
+    #teamsContainer {
+        height: 500px;
+    }
+    #teamsBackgroundTitle h1 {
+        font-size: 85px;
+        margin-left: 40px;
+    }
+    
+    #teamsBackgroundTitle h2 {
+        font-size: 40px;        
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+    .slideshowContainer {
+        height: 66vw;
+        width: 101vw;
+    }
+    .card {
+        opacity:0;
+        height:0;        
+        margin:0;
+        width:200px;
+        margin-top:20px;
+    }
+    #cardContainer td {
+        width:100%;
+        position:absolute;
+    }
+    .bar {
+        width: 20px;
+        height: 5px;
+
+    }
+    
+.footer {
+    height: 125px;
+
+}
+
+
+.footer .logo {
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.footer img {
+    width: 25px;
+    height: 25px;
+    margin-top: 15px;
+    padding: 15px;
+}
+#topButton {
+    padding: 5px;
+    right: 15px;
+    bottom: -25px;
+}
+}
