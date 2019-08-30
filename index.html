@@ -324,6 +324,7 @@
                 sideNavOpen = true;
                 sideNavIterator = 0;
                 document.getElementById("toggleMenu").classList.add("is-active");
+                document.getElementById("sidenav").style.width = "100%";
                 openMenu = setInterval(openMenuOptions, 75);
                 document.getElementById("menuTeamList").style.marginLeft = "-30px";
 
@@ -332,13 +333,14 @@
                 sideNavOpen = false;
                 sideNavIterator = 7;
                 closeMenu = setInterval(closeMenuOptions, 75);
+                document.getElementById("sidenav").style.width = "0";
                 document.getElementById("menuTeamList").style.marginLeft = "-40px";
                 document.getElementById("toggleMenu").classList.remove("is-active");
             }
         }
 
         function openMenuOptions() {
-            document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "13vw";
+            document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "100px";
             sideNavIterator++;
             document.getElementById("toggleMenu").disabled = true;
             if (sideNavIterator == 8) {
@@ -370,23 +372,28 @@
                 document.getElementById("topButton").style.bottom = "0";
             }
         }
-        cardIterator = 0
         counter = 0;
-        moveDist = document.documentElement.clientWidth * 0.99;
         
         function moveCardsLeft() {
             if (counter > 0) {
+                document.getElementsByClassName("card")[counter].style.opacity = "0";
+                document.getElementsByClassName("card")[counter].style.height = "0";
                 counter--;
-                cardIterator += moveDist;
-                document.getElementById("cardContainer").style.left = cardIterator;
+                document.getElementsByClassName("card")[counter].style.opacity = "1";
+                document.getElementsByClassName("card")[counter].style.height = "400px";
+
             }
         }
 
         function moveCardsRight() {
             if (counter < 6) {
+                document.getElementsByClassName("card")[counter].style.opacity = "0";
+                document.getElementsByClassName("card")[counter].style.height = "0";
+
                 counter++;
-                cardIterator -= moveDist;
-                document.getElementById("cardContainer").style.left = cardIterator;
+                document.getElementsByClassName("card")[counter].style.opacity = "1";
+                document.getElementsByClassName("card")[counter].style.height = "400px";
+
             }
         }
 
