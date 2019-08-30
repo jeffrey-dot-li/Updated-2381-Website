@@ -14,12 +14,12 @@ body::-webkit-scrollbar {
 
 @font-face {
     font-family: "neutra";
-    src: url("NeutraText-book.otf") format("opentype");
+    src: url("neutratext-book.otf") format("opentype");
 }
 
 @font-face {
     font-family: "neutra-bold";
-    src: url("NeutraText-bold.otf") format("opentype");
+    src: url("neutratext-bold.otf") format("opentype");
 }
 
 @font-face {
