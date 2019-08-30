@@ -787,7 +787,6 @@ input[name="r"] {
     #teamsBackgroundTitle h1 {
         font-size: 160px;
         margin-left: 100px;
-        margin-top: -35px;
     }
     
     #teamsBackgroundTitle h2 {
@@ -800,10 +799,13 @@ input[name="r"] {
         width: 100vw;
     }
     .card {
-    width: 33vw;    
-    margin-left:33vw;
-    margin-right:33vw;
-    margin-top:20px;
+        opacity:0;
+        height:0;        margin:0;
+        margin-top:20px;
+    }
+    #cardContainer td {
+        width:100%;
+        position:absolute;
     }
 }
 
