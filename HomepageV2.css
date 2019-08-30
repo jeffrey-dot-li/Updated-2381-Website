@@ -464,6 +464,7 @@ input[name="r"] {
     overflow: hidden;
     display: block;
     transition: 0.5s ease-in-out;
+    background-color:blue;
 }
 
 #menuTeamList {
