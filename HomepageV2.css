@@ -462,7 +462,6 @@ input[name="r"] {
     width: 0px;
     height: 25px;
     overflow: hidden;
-    overflow-y: hidden;
     display: block;
     transition: 0.5s ease-in-out;
 }
