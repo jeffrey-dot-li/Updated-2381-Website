@@ -59,12 +59,12 @@
         <div id="sidenav">
             <table class="sidenavContent">
                 <tr>
-                    <td class="menuTD" style="width:0;"><a class="link activeLink" href="#Home">HOME
+                    <td class="menuTD"><a class="link activeLink" href="#Home">HOME
 
                            </a></td>
                 </tr>
                 <tr>
-                    <td class="menuTD" style="width:0;"><a class="link" href="#About">ABOUT
+                    <td class="menuTD"><a class="link" href="#About">ABOUT
 
                           </a></td>
                 </tr>
@@ -182,47 +182,47 @@
             <tr>
 
                 <td align="center">
-                    <div class="card" style="opacity:1;height:400px;background-image:url('images/ExampleBackground.jpg');">
+                    <div class="card" onclick="showTeamPageLink(0)"style="opacity:1;height:400px;background-image:url('images/ExampleBackground.jpg');">
                         <a class="teamPageImage">23<br>81<br>A</a>
                         <a href="2381C.ca" class="teamPageLink">Visit Page</a>
                     </div>
                 </td>
                 <td align="center">
-                    <div class="card" style="background-image:url('images/exampleBackground2.jpg');">
+                    <div class="card" onclick="showTeamPageLink(1)"style="background-image:url('images/ExampleBackground2.jpg');">
                         <a class="teamPageImage">23<br>81<br>B</a>
                         <a href="2381C.ca" class="teamPageLink">Visit Page</a>
                     </div>
                 </td>
                 <td align="center">
-                    <div class="card" style="background-image:url('images/exampleBackground3.jpg');">
+                    <div class="card" onclick="showTeamPageLink(2)"style="background-image:url('images/ExampleBackground3.jpg');">
                         <a class="teamPageImage">23<br>81<br>C</a>
                         <a href="2381C.ca" class="teamPageLink">Visit Page</a>
 
                     </div>
                 </td>
                 <td align="center">
-                    <div class="card" style="background-image:url('images/ExampleBackground.jpg');">
+                    <div class="card" onclick="showTeamPageLink(3)"style="background-image:url('images/ExampleBackground.jpg');">
                         <a class="teamPageImage">23<br>81<br>W</a>
                         <a href="2381C.ca" class="teamPageLink">Visit Page</a>
 
                     </div>
                 </td>
                 <td align="center">
-                    <div class="card" style="background-image:url('images/exampleBackground2.jpg');">
+                    <div class="card" onclick="showTeamPageLink(4)"style="background-image:url('images/ExampleBackground2.jpg');">
                         <a class="teamPageImage">23<br>81<br>X</a>
                         <a href="2381C.ca" class="teamPageLink">Visit Page</a>
 
                     </div>
                 </td>
                 <td align="center">
-                    <div class="card" style="background-image:url('images/exampleBackground3.jpg');">
+                    <div class="card" onclick="showTeamPageLink(5)"style="background-image:url('images/ExampleBackground3.jpg');">
                         <a class="teamPageImage">23<br>81<br>Y</a>
                         <a href="2381C.ca" class="teamPageLink">Visit Page</a>
 
                     </div>
                 </td>
                 <td align="center">
-                    <div class="card" style="background-image:url('images/ExampleBackground.jpg');">
+                    <div class="card" onclick="showTeamPageLink(6)"style="background-image:url('images/ExampleBackground.jpg');">
                         <a class="teamPageImage">23<br>81<br>Z</a>
                         <a href="2381C.ca" class="teamPageLink">Visit Page</a>
 
@@ -247,34 +247,34 @@
                 <input type="radio" name="r" id="r9">
                 <input type="radio" name="r" id="r10">
                 <div class="slide s1">
-                    <img src="images/slideshowImage1.JPG" alt="">
+                    <img src="images/slideshowImage1.jpg" alt="">
                 </div>
                 <div class="slide">
-                        <img style="" src="images/slideshowImage2.JPG" alt="">
+                        <img style="" src="images/slideshowImage2.jpg" alt="">
                     </div>
                 <div class="slide">
-                        <img src="images/slideshowImage3.JPG" alt="">
+                        <img src="images/slideshowImage3.jpg" alt="">
                     </div>
                 <div class="slide">
-                        <img style="" src="images/slideshowImage4.JPG" alt="">
+                        <img style="" src="images/slideshowImage4.jpg" alt="">
                     </div>
                 <div class="slide">
-                        <img src="images/slideshowImage5.JPG" alt="">
+                        <img src="images/slideshowImage5.jpg" alt="">
                     </div>
                     <div class="slide">
-                            <img style="" src="images/slideshowImage6.JPG" alt="">
+                            <img style="" src="images/slideshowImage6.jpg" alt="">
                         </div>
                         <div class="slide">
-                                <img style="" src="images/slideshowImage7.JPG" alt="">
+                                <img style="" src="images/slideshowImage7.jpg" alt="">
                             </div>
                         <div class="slide">
-                                <img src="images/slideshowImage8.JPG" alt="">
+                                <img src="images/slideshowImage8.jpg" alt="">
                             </div>
                         <div class="slide">
-                                <img style="" src="images/slideshowImage9.JPG" alt="">
+                                <img style="" src="images/slideshowImage9.jpg" alt="">
                             </div>
                         <div class="slide">
-                                <img style="" src="images/slideshowImage10.JPG" alt="">
+                                <img style="" src="images/slideshowImage10.jpg" alt="">
                             </div>
             </div>
 
@@ -399,6 +399,11 @@
 
         function revealCards() {
             document.getElementById("teamsBackgroundTitle").style.height = 0;
+        }
+        function showTeamPageLink(i) {
+            document.getElementsByClassName("TeamPageImage")[i].style.backgroundColor = "black";
+            document.getElementsByClassName("TeamPageLink")[i].style.transform = "translateY(10px)";
+            document.getElementsByClassName("TeamPageLink")[i].style.opacity = "1";
         }
     </script>
 </body>
