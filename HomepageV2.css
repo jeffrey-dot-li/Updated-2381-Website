@@ -433,6 +433,7 @@ input[name="r"] {
     z-index: 100;
     transition: 1.5s ease-in-out;
     overflow:hidden;
+    width:0;
 }
 
 .sidenavContent {
