@@ -737,6 +737,7 @@ input[name="r"] {
     }
     #toggleMenu:hover .line {
         width: 45px;
+        color:blue;
     }
     .teamLogo {
         font-size: 15px;
