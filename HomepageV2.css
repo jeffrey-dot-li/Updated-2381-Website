@@ -460,10 +460,10 @@ input[name="r"] {
 .sidenavContent .menuTD {
     padding: 0;
     width: 0px;
+    height:25px;
     overflow: hidden;
     display: block;
     transition: 0.5s ease-in-out;
-    background-color:pink;
 }
 
 #menuTeamList {
