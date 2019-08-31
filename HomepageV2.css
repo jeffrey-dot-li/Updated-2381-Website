@@ -6,7 +6,23 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     overflow-x: hidden;
+
 }
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+}
+
+
 
 body::-webkit-scrollbar {
     display: none;
@@ -824,6 +840,9 @@ input[name="r"] {
 
 
 @media only screen and (max-width:767px) {
+    body{
+        width:100%;
+    }
     #sidenav {
         top: 175px;
         left: 35px;
@@ -962,7 +981,7 @@ input[name="r"] {
     }
     .slideshowContainer {
         height: 66vw;
-        width: 101vw;
+        width: 100vw;
     }
     .card {
         opacity:0;
@@ -1000,7 +1019,7 @@ input[name="r"] {
 }
 #topButton {
     padding: 5px;
-    right: 15px;
+    right: 50px;
     bottom: -25px;
 }
 }
