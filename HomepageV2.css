@@ -1026,4 +1026,10 @@ input[name="r"] {
 #splash .texture {
     height:350px;
 }
+    #splash .background1 {
+            height:350px;
+    }
+    #splash .background2 {
+            height:350px;
+    }
 }
