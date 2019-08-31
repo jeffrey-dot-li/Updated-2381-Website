@@ -1017,7 +1017,13 @@ input[name="r"] {
 }
 #topButton {
     padding: 5px;
-    right: 50px;
+    right: 15px;
     bottom: -25px;
+}
+    #vexInfoSection .texture {
+    height:825px;
+}
+#splash .texture {
+    height:350px;
 }
 }
