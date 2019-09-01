@@ -1023,4 +1023,10 @@ display:none;
     width: 20px;
     height: 2px;
 }
+    #menuButton {
+    margin-left: 25px;
+}
+.line {
+    margin-left: 25px;
+}
 }
