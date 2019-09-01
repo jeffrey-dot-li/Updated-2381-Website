@@ -1023,4 +1023,11 @@ display:none;
     width: 20px;
     height: 2px;
 }
+    .hamburger-inner::before {
+    top: -5px;
+}
+
+.hamburger-inner::after {
+    bottom: -5px;
+}
 }
