@@ -1030,10 +1030,9 @@ display:none;
 .hamburger-inner::after {
     bottom: -5px;
 }
-    #menuButton {
+#menuButton {
     margin-left: 25px;
-}
-    .hamburger-inner {
-    margin-top: -5px;
+    position:relative;
+    top:5px;
 }
 }
