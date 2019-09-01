@@ -1030,4 +1030,7 @@ display:none;
 .hamburger-inner::after {
     bottom: -5px;
 }
+    #menuButton {
+    margin-left: 25px;
+}
 }
