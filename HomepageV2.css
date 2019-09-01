@@ -414,7 +414,6 @@ input[name="r"] {
 
 .contactText1 {
     position: absolute;
-    float: right;
     color: rgb(249, 211, 139);
     font-size: 15px;
     right: 40px;
@@ -883,6 +882,9 @@ input[name="r"] {
     #toggleMenu:hover .line {
         width: 45px;
     }
+    #menubutton {
+        position:relative; 
+    }
     .teamLogo {
         font-size: 10px;
     }
@@ -974,8 +976,8 @@ input[name="r"] {
         position:absolute;
     }
     .bar {
-        width: 12px;
-        height: 5px;
+        width: 4.5vw;
+        height: 1.6vw;
 
     }
     
@@ -1031,9 +1033,8 @@ display:none;
     bottom: -5px;
 }
 #menuButton {
-    position:absolute;
-    left:-13px;
-    top:8px;
+    margin-left: 25px;
+
 }
 .line {
     margin-left: 25px;
