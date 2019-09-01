@@ -28,12 +28,12 @@ body::-webkit-scrollbar {
 
 @font-face {
     font-family: "neutra";
-    src: url("neutratext-book.otf") format("opentype");
+    src: url("NeutraText-book.otf") format("opentype");
 }
 
 @font-face {
     font-family: "neutra-bold";
-    src: url("neutratext-bold.otf") format("opentype");
+    src: url("NeutraText-bold.otf") format("opentype");
 }
 
 @font-face {
@@ -249,6 +249,9 @@ input[name="r"] {
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+    width:50px;
+    height:50px;
+    transform:translateX(-25px);
 }
 
 #cardContainer {
@@ -399,7 +402,7 @@ input[name="r"] {
 .teamLogo {
     color: rgb(249, 211, 139);
     position: relative;
-    top: -31px;
+    top: -34px;
     border: 2px solid rgb(249, 211, 139);
     padding: 6px;
     display: inline;
@@ -415,37 +418,20 @@ input[name="r"] {
     color: rgb(249, 211, 139);
     font-size: 15px;
     right: 40px;
-    top: 31px;
+    top: 25px;
     z-index: 100;
     height: 16px;
     overflow: hidden;
     opacity: 1;
     transition: 0.2s ease-in-out;
+    text-decoration:none;
+    background-color:rgb(0,123,255);
+    border-radius:5px;
+    padding:10px;
 }
-
-.contactText2 {
-    position: absolute;
-    float: right;
-    color: rgb(249, 211, 139);
-    font-size: 15px;
-    right: 40px;
-    top: 31px;
-    z-index: 100;
-    height: 0;
-    opacity: 0;
-    transition: 0.2s ease-in-out;
+.contactText1:hover {
+    background-color:rgb(2, 108, 222);
 }
-
-.contactInfo:hover .contactText1 {
-    opacity: 0;
-    height: 0;
-}
-
-.contactInfo:hover .contactText2 {
-    opacity: 1;
-    height: 16px;
-}
-
 #sidenav {
     position: absolute;
     top: 34%;
@@ -466,16 +452,20 @@ input[name="r"] {
     font-size: 15px;
     opacity: 0.4;
     transition: 0.2s ease-in-out;
+
 }
 
 .link:hover {
     opacity: 1;
     font-size: 16px;
+    padding-left:5px;
+
 }
 
 .sidenavContent .activeLink {
     opacity: 1;
-    font-size: 16px;
+    font-size: 30px;
+    padding-left:5px;
 }
 
 .sidenavContent .menuTD {
@@ -755,8 +745,16 @@ input[name="r"] {
         top:450px;
     }
 
-
+#splash .texture {
+    height:800px;
+}
     
+.background2 {
+    height:500px;
+}
+#vexInfoSection .texture {
+    height:700px;
+}
 
     #toggleMenu {
         font-size: 16px;
@@ -771,22 +769,9 @@ input[name="r"] {
         font-size: 15px;
         height: 16px;
     }
-    
-    .contactText2 {
-        font-size: 15px;
-    }
-    
-    .contactInfo:hover .contactText2 {
-        height: 16px;
-    }
-    .sidenavContent .activeLink {
-        font-size: 16px;
-    }
     #vexInfoSection p {
         font-size: 20px;
     }
-
-
 
 
 
@@ -850,12 +835,9 @@ input[name="r"] {
         width:15px;
         line-height:15px;
     }
+    
     .link {
         font-size: 10px;
-    }
-    
-    .link:hover {
-        font-size: 11px;
     } 
     #splash {
         height:350px;
@@ -875,13 +857,13 @@ input[name="r"] {
         line-height: 15px;
     }
     .vexInfoText1 {
-        text-align:justify;
+        text-align:center;
         width:70%;
         margin-left:15%;
         position:relative;
     }
     .vexInfoText2 {
-        text-align:justify;
+        text-align:center;
         width:70%;
         margin-left:15%;
         margin-top:-50px;
@@ -892,6 +874,7 @@ input[name="r"] {
     }
     .vexInfoText2 a {
         font-size:11px;
+        margin-bottom:20px;
     }
     #toggleMenu {
         font-size: 11px;
@@ -907,18 +890,18 @@ input[name="r"] {
         font-size: 10px;
         height: 11px;
         right:20px;
+        border-radius:3px;
+        padding:5px;
     }
-    
-    .contactText2 {
-        font-size: 10px;
-        right:20px;
-    }
-    
-    .contactInfo:hover .contactText2 {
-        height: 11px;
-    }
-    .sidenavContent .activeLink {
+
+    .link:hover {
         font-size: 11px;
+        padding-left:4px;
+    }
+    
+    .sidenavContent .activeLink {
+        font-size: 15px;
+        padding-left:4px;
     }
     #vexInfoSection p {
         font-size: 13px;
@@ -944,9 +927,7 @@ input[name="r"] {
         letter-spacing:20px;
         padding-top:20px;
     }
-    #vexInfoSection {
-        height: 820px;
-    }
+
     #towerTakeoverYT {
         width: 250px;
         height:150px;
@@ -968,12 +949,12 @@ input[name="r"] {
         height: 500px;
     }
     #teamsBackgroundTitle h1 {
-        font-size: 85px;
+        font-size: 22.5vw;
         margin-left: 40px;
     }
     
     #teamsBackgroundTitle h2 {
-        font-size: 40px;        
+        font-size: 12.5vw;        
         margin-top: 50px;
         margin-left: 40px;
     }
@@ -993,7 +974,7 @@ input[name="r"] {
         position:absolute;
     }
     .bar {
-        width: 20px;
+        width: 12px;
         height: 5px;
 
     }
@@ -1016,17 +997,30 @@ input[name="r"] {
     padding: 15px;
 }
 #topButton {
-    padding: 5px;
-    right: 15px;
-    bottom: -25px;
+display:none;
 }
-    #vexInfoSection .texture {
-    height:825px;
+#vexInfoSection .texture {
+    height:1000px;
 }
 #splash .texture {
+    height:600px;
+}
+.background2 {
     height:350px;
 }
-    .background2 {
-    height:350px;
-    }
+.moveTeamsButtonLeft {
+    left: 10px;
+    font-size: 40px;
+}
+.moveTeamsButtonRight {
+    right: 10px;
+    font-size: 40px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 20px;
+    height: 2px;
+}
 }
