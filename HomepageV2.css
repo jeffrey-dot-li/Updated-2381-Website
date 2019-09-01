@@ -1023,11 +1023,17 @@ display:none;
     width: 20px;
     height: 2px;
 }
-#menuButton {
-    margin-left: 25px;
+.hamburger-inner::before {
+    top: -5px;
 }
-.line {
-    margin-left: 25px;
+
+.hamburger-inner::after {
+    bottom: -5px;
+}
+#menuButton {
+    position:absolute;
+    left:-13px;
+    top:8px;
 }
 .line {
     margin-left: 25px;
