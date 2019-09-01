@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
 </head>
 
-<body style="">
+<body>
     <div style="display:none;">
         #AA0723 #89041D #F9D38B
 
@@ -33,9 +33,7 @@
                 <div class="teamLogo">2381 ROBOTICS</div>
             </center>
             <div class="contactInfo">
-                <span class="contactText2">cbrobotics2381@gmail.com</span>
-                <a class="contactText1">GET IN TOUCH</a></div>
-
+                <a href="#contact" class="contactText1">GET IN TOUCH</a></div>
         </div>
         <span class="vex2019text"><span class="vexText">VEX</span>
         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019</span>
@@ -142,8 +140,8 @@
     <div id="vexInfoSection">
         <div class="background3"></div>
         <div class="background4"></div>
-        <div class="texture" style="height:825px"></div>
-        <div class="vexInfoText1" style="">
+        <div class="texture" ></div>
+        <div class="vexInfoText1" >
             
             <img src="images/towerTakeover.png">
             <p>2381 Robotics is a club run at Colonel By Secondary School in Ottawa with multiple competitive teams working on robots for VEX EDR Robotics Competitions. The VEX Robotics Competition is a robotics competition for elementary through university students, where competitors are given a yearly challenge for which they must design, build, program, and drive a robot to complete the challenge as best as they can.</p>
@@ -152,7 +150,7 @@
             <iframe src="https://www.youtube.com/embed/_JVQOiw_OUU" id="towerTakeoverYT" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         </div>
-        <div class="vexInfoText2"style="">
+        <div class="vexInfoText2">
             <br>
             <br>
             <br>
@@ -169,10 +167,10 @@
 
         <div id="teamsBackgroundTitle">
 
-            <h2>VIEW</h2><br><br><br>
+            <h2>VIEW</h2><br>
             <h1>TEAMS</h1>
             <center>
-                <button onclick="revealCards()" class="pulsate"><img src="images/back-to-top-arrow.png" class="pulsate" width="50px" height="50px"></button>
+                <button onclick="revealCards()" class="pulsate"><img src="images/back-to-top-arrow.png" class="pulsate"></button>
             </center>
 
         </div>
@@ -251,31 +249,31 @@
                     <img src="images/slideshowImage1.jpg" alt="">
                 </div>
                 <div class="slide">
-                        <img style="" src="images/slideshowImage2.jpg" alt="">
+                        <img  src="images/slideshowImage2.jpg" alt="">
                     </div>
                 <div class="slide">
                         <img src="images/slideshowImage3.jpg" alt="">
                     </div>
                 <div class="slide">
-                        <img style="" src="images/slideshowImage4.jpg" alt="">
+                        <img  src="images/slideshowImage4.jpg" alt="">
                     </div>
                 <div class="slide">
                         <img src="images/slideshowImage5.jpg" alt="">
                     </div>
                     <div class="slide">
-                            <img style="" src="images/slideshowImage6.jpg" alt="">
+                            <img  src="images/slideshowImage6.jpg" alt="">
                         </div>
                         <div class="slide">
-                                <img style="" src="images/slideshowImage7.jpg" alt="">
+                                <img  src="images/slideshowImage7.jpg" alt="">
                             </div>
                         <div class="slide">
                                 <img src="images/slideshowImage8.jpg" alt="">
                             </div>
                         <div class="slide">
-                                <img style="" src="images/slideshowImage9.jpg" alt="">
+                                <img  src="images/slideshowImage9.jpg" alt="">
                             </div>
                         <div class="slide">
-                                <img style="" src="images/slideshowImage10.jpg" alt="">
+                                <img  src="images/slideshowImage10.jpg" alt="">
                             </div>
             </div>
 
@@ -325,7 +323,7 @@
                 sideNavOpen = true;
                 sideNavIterator = 0;
                 document.getElementById("toggleMenu").classList.add("is-active");
-                document.getElementById("sidenav").style.width = "110px";
+                document.getElementById("sidenav").style.width = "120px";
                 openMenu = setInterval(openMenuOptions, 75);
                 document.getElementById("menuTeamList").style.marginLeft = "-30px";
 
@@ -341,7 +339,7 @@
         }
 
         function openMenuOptions() {
-            document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "100px";
+            document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "120px";
             sideNavIterator++;
             document.getElementById("toggleMenu").disabled = true;
             if (sideNavIterator == 8) {
